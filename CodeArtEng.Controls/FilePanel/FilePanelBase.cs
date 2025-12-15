@@ -20,6 +20,8 @@ namespace CodeArtEng.Controls
         /// Internal callback when textbox value changed
         /// </summary>
         protected Action ValueChangedCallback;
+        protected bool UpdatingPath;
+
 
         /// <summary>
         /// Constructor
@@ -87,7 +89,7 @@ namespace CodeArtEng.Controls
 
         private void textbox_TextChanged(object sender, EventArgs e)
         {
-            ValueChangedCallback?.Invoke();
+            if (!UpdatingPath) ValueChangedCallback?.Invoke();
             TextChanged?.Invoke(this, null);
         }
 

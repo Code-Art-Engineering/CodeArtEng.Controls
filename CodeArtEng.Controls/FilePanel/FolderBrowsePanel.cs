@@ -107,10 +107,8 @@ namespace CodeArtEng.Controls
             }
         }
 
-        private bool UpdatingPath = false;
         private void TextboxValueChangedCallback()
         {
-            if (UpdatingPath) return; //Prevent double trigger
             SelectedPathChanged?.Invoke(this, null);
         }
 

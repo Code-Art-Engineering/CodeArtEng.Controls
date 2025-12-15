@@ -89,7 +89,9 @@ namespace CodeArtEng.Controls
             get { return textbox.Text; }
             set
             {
+                UpdatingPath = true;
                 textbox.Text = value;
+                UpdatingPath = false;
                 SelectedFileChanged?.Invoke(this, null);
             }
         }
