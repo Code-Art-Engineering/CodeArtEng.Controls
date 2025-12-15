@@ -253,6 +253,11 @@ namespace CodeArtEng.ControlsTest
         }
 
         #endregion
+
+        private void folderBrowsePanel3_SelectedPathChanged(object sender, EventArgs e)
+        {
+            Debug.WriteLine("Path Changed.");
+        }
     }
 
     public class PropertyGridTest

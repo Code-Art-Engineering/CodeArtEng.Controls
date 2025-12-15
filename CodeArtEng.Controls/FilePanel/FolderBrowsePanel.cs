@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Windows.Forms;
 
-#if NET472
+#if NET48
 using WK.Libraries.BetterFolderBrowserNS;
 #endif
 
@@ -69,7 +69,7 @@ namespace CodeArtEng.Controls
 
         private void btBrowse_Click(object sender, EventArgs e)
         {
-#if NET472
+#if NET48
             if (!LegacyMode)
             {
                 try
@@ -107,8 +107,10 @@ namespace CodeArtEng.Controls
             }
         }
 
+        private bool UpdatingPath = false;
         private void TextboxValueChangedCallback()
         {
+            if (UpdatingPath) return; //Prevent double trigger
             SelectedPathChanged?.Invoke(this, null);
         }
 
@@ -121,7 +123,9 @@ namespace CodeArtEng.Controls
             get { return textbox.Text; }
             set
             {
+                UpdatingPath = true;
                 textbox.Text = value;
+                UpdatingPath = false;
                 SelectedPathChanged?.Invoke(this, null);
             }
         }

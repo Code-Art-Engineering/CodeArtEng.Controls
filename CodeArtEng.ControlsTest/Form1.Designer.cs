@@ -550,6 +550,7 @@
             this.folderBrowsePanel3.Size = new System.Drawing.Size(306, 22);
             this.folderBrowsePanel3.TabIndex = 30;
             this.folderBrowsePanel3.Text = "folderBrowsePanel3";
+            this.folderBrowsePanel3.SelectedPathChanged += new System.EventHandler(this.folderBrowsePanel3_SelectedPathChanged);
             // 
             // folderBrowsePanel2
             // 
@@ -813,7 +814,7 @@
             this.richTextEditor1.Name = "richTextEditor1";
             this.richTextEditor1.ReadOnly = false;
             this.richTextEditor1.RichText = "{\\rtf1\\ansi\\ansicpg1252\\deff0\\nouicompat{\\fonttbl{\\f0\\fnil\\fcharset0 Verdana;}}\r\n" +
-    "{\\*\\generator Riched20 10.0.22621}\\viewkind4\\uc1 \r\n\\pard\\f0\\fs20\\lang17417 Test\\" +
+    "{\\*\\generator Riched20 10.0.26100}\\viewkind4\\uc1 \r\n\\pard\\f0\\fs20\\lang17417 Test\\" +
     "par\r\n}\r\n";
             this.richTextEditor1.ShowToolsPanel = false;
             this.richTextEditor1.Size = new System.Drawing.Size(1069, 538);
@@ -838,7 +839,7 @@
             this.RtfMerged.Name = "RtfMerged";
             this.RtfMerged.ReadOnly = false;
             this.RtfMerged.RichText = "{\\rtf1\\ansi\\deff0\\nouicompat{\\fonttbl{\\f0\\fnil Arial;}}\r\n{\\*\\generator Riched20 1" +
-    "0.0.22621}\\viewkind4\\uc1 \r\n\\pard\\f0\\fs20\\lang1033 richTextEditor2\\par\r\n}\r\n";
+    "0.0.26100}\\viewkind4\\uc1 \r\n\\pard\\f0\\fs20\\lang1033 richTextEditor2\\par\r\n}\r\n";
             this.RtfMerged.ShowToolsPanel = false;
             this.RtfMerged.Size = new System.Drawing.Size(486, 490);
             this.RtfMerged.TabIndex = 4;
@@ -850,7 +851,7 @@
             this.RtfB.Name = "RtfB";
             this.RtfB.ReadOnly = false;
             this.RtfB.RichText = "{\\rtf1\\ansi\\deff0\\nouicompat{\\fonttbl{\\f0\\fnil Arial;}}\r\n{\\*\\generator Riched20 1" +
-    "0.0.22621}\\viewkind4\\uc1 \r\n\\pard\\f0\\fs20\\lang1033 Seond part of text\\par\r\n}\r\n";
+    "0.0.26100}\\viewkind4\\uc1 \r\n\\pard\\f0\\fs20\\lang1033 Seond part of text\\par\r\n}\r\n";
             this.RtfB.ShowToolsPanel = false;
             this.RtfB.Size = new System.Drawing.Size(571, 282);
             this.RtfB.TabIndex = 1;
@@ -862,7 +863,7 @@
             this.RtfA.Name = "RtfA";
             this.RtfA.ReadOnly = false;
             this.RtfA.RichText = "{\\rtf1\\ansi\\deff0\\nouicompat{\\fonttbl{\\f0\\fnil Arial;}}\r\n{\\*\\generator Riched20 1" +
-    "0.0.22621}\\viewkind4\\uc1 \r\n\\pard\\f0\\fs20\\lang1033 First part of text. \\par\r\n}\r\n";
+    "0.0.26100}\\viewkind4\\uc1 \r\n\\pard\\f0\\fs20\\lang1033 First part of text. \\par\r\n}\r\n";
             this.RtfA.ShowToolsPanel = false;
             this.RtfA.Size = new System.Drawing.Size(571, 233);
             this.RtfA.TabIndex = 0;
